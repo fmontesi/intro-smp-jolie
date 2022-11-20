@@ -1,0 +1,14 @@
+{
+	"image": "jolielang/jolie:edge-dev",
+	"containerUser": "jolie",
+	"postCreateCommand": "sh .devcontainer/install-tools.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"jolie.vscode-jolie",
+				"bierner.markdown-mermaid",
+				"bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+			]
+		}
+	}
+}

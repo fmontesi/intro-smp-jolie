@@ -1,0 +1,28 @@
+{
+  "name": "users-crud",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.ol",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "repo": "",
+  "keywords": [],
+  "author": "fmontesi",
+  "license": "ISC",
+  "dockerfile": true,
+  "devcontainer": true,
+  "scripts": {
+    "watch": "nodemon jolie main.ol"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "jolie": {
+    "dependencies": {},
+    "maven": {
+      "dependencies": {
+        "org.hsqldb:hsqldb": "2.7.1"
+      },
+      "indirectDependencies": {}
+    }
+  }
+}
