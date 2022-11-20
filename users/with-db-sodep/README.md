@@ -1,3 +1,5 @@
+# Architecture
+
 ```mermaid
 flowchart LR
 	subgraph users-net
@@ -13,3 +15,11 @@ flowchart LR
 	client(client)
 	client--http-->users
 ```
+
+# Setup
+- `npm install`
+- `jpm install`
+- `jolie setup-db.ol`
+
+# Launch
+- `jolie main.ol`

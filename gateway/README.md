@@ -1,3 +1,5 @@
+# Architecture
+
 ```mermaid
 flowchart LR
 	subgraph users-net
@@ -23,3 +25,9 @@ flowchart LR
 	client-greeter(greeter client)
 	client-greeter--http-->gateway
 ```
+
+# Launch
+
+- `jolie gateway.ol`
+- `(cd ../greeter/by-username && jolie main.ol)`
+- `(cd ../users/with-db-sodep && jolie main.ol)`
