@@ -27,7 +27,7 @@ service Gateway {
 					template = "/user"
 					method = "get"
 				}
-				viewUser << {
+				getUser << {
 					template = "/user/{username}"
 					method = "get"
 					statusCodes.UserNotFound = 404

@@ -25,7 +25,7 @@ service Greeter {
 
 	main {
 		greet( request )( response ) {
-			viewUser@users( request )( user )
+			getUser@users( request )( user )
 			response.greeting =
 				(if( user.karma > 3 ) "😀" else "🤨") +
 				" Hello, " + user.name

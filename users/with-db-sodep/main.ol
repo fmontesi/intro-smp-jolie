@@ -8,12 +8,12 @@ type User {
 }
 type ListUsersRequest { minKarma?: int }
 type ListUsersResponse { usernames*: string }
-type ViewUserRequest { username: string }
+type GetUserRequest { username: string }
 
 interface UsersInterface {
 RequestResponse:
 	listUsers( ListUsersRequest )( ListUsersResponse ),
-	viewUser( ViewUserRequest )( User ) throws UserNotFound( string ),
+	getUser( GetUserRequest )( User ) throws UserNotFound( string ),
 	createUser( User )( void )
 }
 
@@ -48,7 +48,7 @@ service Users {
 			} )()
 		} ]
 
-		[ viewUser( request )( response ) {
+		[ getUser( request )( response ) {
 			query@db( "SELECT username, name, email, karma FROM users WHERE username=:username" {
 				username = request.username
 			} )( result )

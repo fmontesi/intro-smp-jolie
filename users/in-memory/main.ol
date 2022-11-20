@@ -6,12 +6,12 @@ type User {
 }
 type ListUsersRequest { minKarma?: int }
 type ListUsersResponse { usernames*: string }
-type ViewUserRequest { username: string }
+type GetUserRequest { username: string }
 
 interface UsersInterface {
 RequestResponse:
 	listUsers( ListUsersRequest )( ListUsersResponse ),
-	viewUser( ViewUserRequest )( User ) throws UserNotFound( string )
+	getUser( GetUserRequest )( User ) throws UserNotFound( string )
 }
 
 service App {
@@ -26,7 +26,7 @@ service App {
 					template = "/api/user"
 					method = "get"
 				}
-				viewUser << {
+				getUser << {
 					template = "/api/user/{username}"
 					method = "get"
 					statusCodes.UserNotFound = 404
@@ -57,7 +57,7 @@ service App {
 	}
     
 	main {
-		[ viewUser( request )( user ) {
+		[ getUser( request )( user ) {
 			username = request.username
 			if( is_defined( users.(username) ) ) {
 				user << users.(username)
