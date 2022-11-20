@@ -22,6 +22,7 @@ Then, you can either:
 - [Jolie programming language](https://www.jolie-lang.org)
 - [Jolie documentation](https://docs.jolie-lang.org)
 - [Awesome Jolie: a curated list of Jolie software](https://github.com/jolie/awesome-jolie)
+- [Microservice API patterns](https://www.microservice-api-patterns.org/)
 
 ## Contact me
 
