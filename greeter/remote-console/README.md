@@ -1,5 +1,5 @@
 ```mermaid
-flowchart LR
+graph LR
 	client{{client}}
 	subgraph remote-console-net
 		remote-console{{remote console}}

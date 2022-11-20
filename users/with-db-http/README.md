@@ -1,5 +1,5 @@
 ```mermaid
-flowchart LR
+graph LR
 	subgraph users-net
 		direction TB
 		users{{users}}

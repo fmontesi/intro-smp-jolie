@@ -1,5 +1,5 @@
 ```mermaid
-flowchart LR
+graph LR
 	subgraph client-net
 		direction TB
 		client{{client}}
