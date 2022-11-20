@@ -4,8 +4,8 @@ HTTPCMD="http -b"
 
 next() {
 	echo -n "Next command: $1"
-	read
-	$1
+	read _
+	eval $1
 }
 
 # Get carol

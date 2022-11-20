@@ -13,7 +13,7 @@ graph LR
 		users--local-->db
 	end
 
-	gateway{{gateway}}
+	gateway{{gateway w/ auth}}
 	gateway--sodep-->users
 	client-users(users client)
 	client-users--http-->gateway
@@ -28,6 +28,6 @@ graph LR
 
 # Launch
 
-- `jolie gateway.ol`
-- `(cd ../greeter/by-username && jolie main.ol)`
-- `(cd ../users/with-db-sodep && jolie main.ol)`
+- `(cd ../../greeter/by-username && jolie main.ol)`
+- `(cd ../../users/with-db-sodep && jolie main.ol)`
+- `jolie main.ol`

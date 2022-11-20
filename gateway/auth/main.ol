@@ -1,5 +1,14 @@
-from ..greeter.by-username import GreeterInterface
-from ..users.with-db-sodep import UsersInterface
+from ...greeter.by-username import GreeterInterface
+from ...users.with-db-sodep import UsersInterface
+
+type Authorization {
+	apiKey: string
+}
+
+interface extender AuthorizationExtender {
+RequestResponse:
+	createUser( Authorization )( void ) throws Unauthorized( void )
+}
 
 service Gateway {
 	outputPort greeter {
@@ -35,10 +44,23 @@ service Gateway {
 				createUser << {
 					template = "/user/{username}"
 					method = "post"
+					inHeaders.Authorization = "apiKey"
+					statusCodes.Unauthorized = 401
 				}
 			}
 		}
-		aggregates: greeter, users
+		aggregates:
+			greeter,
+			users with AuthorizationExtender
+	}
+
+	courier WebInput {
+		[ createUser( request )( response ) {
+			if( request.apiKey != "Bearer 123" ) {
+				throw( Unauthorized )
+			}
+			forward( request )( response )
+		} ]
 	}
 
 	main {
