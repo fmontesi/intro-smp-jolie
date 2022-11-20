@@ -1,11 +1,7 @@
 ```mermaid
 graph LR
 	client{{client}}
-	subgraph remote-console-net
-		remote-console{{remote console}}
-		console{{console}}
-		remote-console--local-->console
-	end
+	remote-console{{remote console}}
 	
 	greeter{{greeter}}
 
