@@ -11,3 +11,11 @@ graph LR
 
 	client--sodep-->greeter
 ```
+
+# Example Interaction
+
+```mermaid
+sequenceDiagram
+    client->>greeter: {name}
+    greeter->>client: 😀 Hello, {name}
+```
