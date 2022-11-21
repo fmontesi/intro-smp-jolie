@@ -1,3 +1,7 @@
+# Description
+
+A demonstrative API gateway that applies the [API Key pattern](https://www.microservice-api-patterns.org/patterns/quality/qualityManagementAndGovernance/APIKey.html).
+
 # Architecture
 
 ```mermaid

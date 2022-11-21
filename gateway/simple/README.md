@@ -1,3 +1,7 @@
+# Description
+
+An API gateway that provides HTTP access to the greet and users services.
+
 # Architecture
 
 ```mermaid
