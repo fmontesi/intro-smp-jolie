@@ -23,11 +23,11 @@ service App {
 			format = "json"
 			osc << {
 				listUsers << {
-					template = "/api/user"
+					template = "/user"
 					method = "get"
 				}
 				getUser << {
-					template = "/api/user/{username}"
+					template = "/user/{username}"
 					method = "get"
 					statusCodes.UserNotFound = 404
 				}

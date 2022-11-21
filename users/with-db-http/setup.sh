@@ -2,7 +2,7 @@
 
 next() {
 	echo -n "Next command: $1"
-	read
+	read _
 	$1
 }
 
