@@ -6,7 +6,7 @@
 
 ## See the Webinar
 
-https://www.youtube.com/watch?v=YDPcBWLtzNs
+[![YouTube video: An Introduction to Structured Microservice Programming and the Jolie Programming Language](http://img.youtube.com/vi/YDPcBWLtzNs/0.jpg)](http://www.youtube.com/watch?v=YDPcBWLtzNs "An Introduction to Structured Microservice Programming and the Jolie Programming Language")
 
 ## How to use this
 
