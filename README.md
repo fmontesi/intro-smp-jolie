@@ -4,6 +4,9 @@
 
 [https://github.com/fmontesi/intro-smp-jolie](https://github.com/fmontesi/intro-smp-jolie)
 
+## See the Webinar
+
+https://www.youtube.com/watch?v=YDPcBWLtzNs
 
 ## How to use this
 
