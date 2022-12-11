@@ -6,7 +6,7 @@
 
 ## See the Webinar
 
-https://www.youtube.com/watch?v=YDPcBWLtzNs
+https://youtu.be/YDPcBWLtzNs
 
 
 ## How to use this
